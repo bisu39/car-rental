@@ -3,7 +3,7 @@
 A car-rental web application for browsing vehicles, viewing car details, and submitting rental bookings. The project includes a React frontend and an Express/MongoDB backend.
 
 ## Features
-
+```text
 <h4>Frontend</h4>
 - Browse the vehicle collection and filter by vehicle category.
 - View vehicle details, specifications, and rental prices.
@@ -15,7 +15,7 @@ A car-rental web application for browsing vehicles, viewing car details, and sub
 <h4>Backend</h4>
 - RESTful API design
 - MVC architecture
-
+```
 ## Visit
 
 **Live site:** Not deployed yet. Add the public URL here when deployment is available.
