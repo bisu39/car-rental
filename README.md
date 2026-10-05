@@ -20,7 +20,7 @@ A car-rental web application for browsing vehicles, viewing car details, and sub
 
 ## Visit
 
-**Live site:** Not deployed yet. Add the public URL here when deployment is available.
+[Live Demo](carrental-front.netlify.app)
 
 ## Tech stack
 
