@@ -1,0 +1,8 @@
+# Ignoring all env files
+*.env
+
+#Ignoring unnecessary folders 
+**dist/
+**node_modules/
+**init/
+**dist/

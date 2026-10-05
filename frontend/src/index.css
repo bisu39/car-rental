@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+.inter {
+  font-family: 'Inter';
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+}
+/* variables */
+@theme {
+  --color-theme: #5937E0;
+  --color-button: #FF9E0C;
+}
+
+/* active styling */
+.active li{
+  font-weight: 700;
+}
+/* scrollbar hider */
+::-webkit-scrollbar {
+  @apply hidden
+}
