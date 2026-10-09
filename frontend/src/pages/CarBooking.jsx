@@ -29,7 +29,7 @@ const carBooking = () => {
                 toast.success(data.message)
             }
         } catch (error) {
-            toast.error(error.message)
+            toast.error(error.response?.data?.message || error.message)
         }
     }
     const onChangeHandler = (e) => {
@@ -54,7 +54,7 @@ const carBooking = () => {
 
     return (
         <div className=' w-full h-fit flex justify-center items-center xl:mb-20 lg:mb-10 mb-5 mt-10'>
-            <form onSubmit={onSubmitHandler} className='w-[50%] bg-white rounded-[20px] flex flex-col items-center lg:p-10 p-2.5 gap-6 border shadow-xl border-[#6a6868c9]' >
+            <form onSubmit={onSubmitHandler} className=' w-full sm:w-[80%] md:w-[60%] lg:w-1/2 bg-white rounded-[20px] flex flex-col items-center lg:p-10 p-2.5 gap-6 border shadow-xl border-[#6a6868c9]' >
                 <h1 className='text-[20px] lg:text-[32px] font-semibold '>Book your car</h1>
                 <div className='h-fit w-full rounded-xl flex justify-between items-center bg-[#FAFAFA] px-2'>
                     <label className='text-[12px] lg:text-[14px] 2xl:text-[16px] p-2' htmlFor="selectCar">Select Car</label>

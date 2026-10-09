@@ -63,3 +63,6 @@ Possible additions:
 - Add an administration area for managing vehicles and bookings.
 - Integrate secure online payments.
 
+## 🎨 Design Credit
+
+The frontend design for this project is based on the work of **Figma Guru**. Huge thanks for the inspiration and the beautiful UI!

@@ -53,7 +53,7 @@ const TopCars = () => {
                                     <p>{item.isAirConditioned ? "Yes" : 'No'}</p>
                                 </div>
                             </div>
-                            <button onClick={() => navigate(`/details/${item._id}`)} className='w-full p-3 lg:py-5 rounded-2xl bg-theme active:bg-[#5937e0dc]  transition-all duration-200 ease-in text-white font-bold text-[16px]'>View details</button>
+                            <button onClick={() => {navigate(`/details/${item._id}`);window.scrollTo({top:0,behavior:"smooth"}) }} className='w-full p-3 lg:py-5 rounded-2xl bg-theme active:bg-[#5937e0dc]  transition-all duration-200 ease-in text-white font-bold text-[16px]'>View details</button>
                         </div>
                     </div>
                 ))}

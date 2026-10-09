@@ -89,10 +89,14 @@ const loginUser = async (req, res) => {
 //@route post /user/booking
 //@access private
 const carBooking = async (req, res) => {
+
     const { selectCar, rentalLocation, returnLocation, rentalDate, returnDate } = req.body
     const userId = req.userId
     if (!userId) {
         throw new appError('Not logged in', 400)
+    }
+    if (!selectCar || !rentalLocation || !returnLocation || !rentalDate || !returnDate) {
+        throw new appError('Fill the fields properly', 400)
     }
     try {
         const bookingData = await booking.create({ selectCar, rentalLocation, returnLocation, rentalDate, returnDate, userId })
