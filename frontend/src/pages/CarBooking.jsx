@@ -10,6 +10,7 @@ const carBooking = () => {
     const carId = useParams().id
     const filteredData = carsdata.find((car) => car._id === carId)
     const initialFormData = {
+        carName:"",
         selectCar: "",
         category: "",
         fuelType: "",
@@ -50,7 +51,7 @@ const carBooking = () => {
                 returnDate: ""
             });
         }
-    }, [filteredData]);
+    }, []);
 
     return (
         <div className=' w-full h-fit flex justify-center items-center xl:mb-20 lg:mb-10 mb-5 mt-10'>
